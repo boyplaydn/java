@@ -11,7 +11,7 @@ public class ConnectionFactory {
 			return DriverManager.getConnection(
 					"jdbc:mysql://localhost/vnuk",
 					"root",
-					"wolfclaw1"
+					System.getenv("DB_PWD")
 					);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
